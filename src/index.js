@@ -43,7 +43,7 @@
 
 		input.value = '';
 
-		taskEdit.addEventListener('click', (e) => {
+		taskEdit.addEventListener('click', () => {
 			if (taskEdit.innerText.toLowerCase() == "edit") {
 				taskEdit.innerText = "Save";
 				taskInput.removeAttribute("readonly");
@@ -53,7 +53,7 @@
 			}
 		});
 
-		taskDelete.addEventListener('click', (e) => {
+		taskDelete.addEventListener('click', () => {
 			listElement.removeChild(taskElement);
 		});
 	});
